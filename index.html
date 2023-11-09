@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Péndulo</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+        lightblue, burlywood);
+    }
+    h1 {
+      text-aling: center;
+    }
+    .pendulum {
+      width: 40em;
+      height: 30em;
+      font-size: 10px;
+      border-top: 0.3em solid cadetblue;
+      position: relative;
+    }
+    .pendulum span {
+      position: absolute;
+      width: 0.2em;
+      height: calc((var(--n) - 1) * 1em + 15em);
+      background-color: cadetblue;
+      left: 50%;
+      transform-origin: 50% top;
+      transform: rotate(25deg);
+      animation: swing ease-in-out infinite;
+      animation-duration: calc((var(--n) - 1) * 0.02s + 1.5s);
+    }
+    @keyframes swing {
+      50% {
+        transform: rotate(-25deg);
+      }
+    }
+    .pendulum span::before {
+      content: '';
+      position: absolute;
+      width: 1.5em;
+      height: 1.5em;
+      background: radial-gradient(circle at 70% 35%, white, darkturquoise 30%, steelblue 50%);
+      border-radius: 50%;
+      top: 100%;
+      left: -0.75em;
+      box-shadow: -1em 4em 1em rgba(0, 0, 0, 0.1);
+    }
+    .pendulum span:nth-child(1) {
+        --n: 1; }
+    .pendulum span:nth-child(2) {
+        --n: 2; }
+    .pendulum span:nth-child(3) {
+        --n: 3; }
+    .pendulum span:nth-child(4) {
+        --n: 4; }
+    .pendulum span:nth-child(5) {
+        --n: 5; }
+    .pendulum span:nth-child(6) {
+        --n: 6; }
+    .pendulum span:nth-child(7) {
+        --n: 7; }
+    .pendulum span:nth-child(8) {
+        --n: 8; }
+    .pendulum span:nth-child(9) {
+        --n: 9; }
+    .pendulum span:nth-child(10) {
+        --n: 10; }
+    .pendulum span:nth-child(11) {
+        --n: 11; }
+    .pendulum span:nth-child(12) {
+        --n: 12; }
+    .pendulum span:nth-child(13) {
+        --n: 13; }
+    .pendulum span:nth-child(14) {
+        --n: 14; }
+    .pendulum span:nth-child(15) {
+        --n: 15; }
+  </style>
+</head>
+<body>
+  <h1>PENDULO</h1>
+  <div class="pendulum">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> 
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>
