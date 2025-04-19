@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Esta es mi pagina web, referente a un péndulo.">
+  <meta name="author" content="icaito-ricodi">
+  <meta name="keywords" content="Mi pagina, mi sitio, mi web">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <title>Péndulo</title>
   <style>
     body {
@@ -12,9 +19,11 @@
       background: linear-gradient(
         lightblue, burlywood);
     }
+
     h1 {
       text-aling: center;
     }
+
     .pendulum {
       width: 40em;
       height: 30em;
@@ -22,6 +31,7 @@
       border-top: 0.3em solid cadetblue;
       position: relative;
     }
+
     .pendulum span {
       position: absolute;
       width: 0.2em;
@@ -33,6 +43,7 @@
       animation: swing ease-in-out infinite;
       animation-duration: calc((var(--n) - 1) * 0.02s + 1.5s);
     }
+    
     @keyframes swing {
       50% {
         transform: rotate(-25deg);
